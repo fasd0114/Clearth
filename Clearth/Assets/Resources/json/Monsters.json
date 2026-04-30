@@ -1,0 +1,58 @@
+{
+"monsters": [
+    {
+      "name": "WoodSlime",
+      "id": 1,
+      "health": 15,
+      "attack": 1,
+      "attackRange": 2,
+      "range": 7,
+      "speed": 3
+    },
+    {
+      "name": "Golem",
+      "id": 2,
+      "health": 10,
+      "attack": 2,
+      "attackRange": 2,
+      "range": 7,
+      "speed": 5
+    },
+    {
+      "name": "Plant",
+      "id": 3,
+      "health": 10,
+      "attack": 3,
+      "attackRange": 3,
+      "range": 10,
+      "speed": 0.001
+    },
+    {
+      "name": "Golem4",
+      "id": 4,
+      "health": 15,
+      "attack": 4,
+      "attackRange": 3,
+      "range": 99,
+      "speed": 1
+    },
+    {
+      "name": "BossGolem",
+      "id": 5,
+      "health": 100,
+      "attack": 5,
+      "attackRange": 3,
+      "range": 99,
+      "speed": 2
+    },
+    {
+      "name": "Potabee",
+      "id": 6,
+      "health": 5,
+      "attack": 1,
+      "attackRange": 3,
+      "range": 99,
+      "speed": 3
+    }
+  ]
+}

@@ -1,0 +1,699 @@
+fileFormatVersion: 2
+guid: 924fa7dac88e6af49aada960a816e971
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Tree Boss_Skill_Frame_0
+    originalName: 
+    pivot: {x: 0.47530863, y: -0.0068493155}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 469
+      width: 162
+      height: 146
+    spriteID: d649bfb4d29efbd489fccd71e488e182
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -4, y: 468}
+  - name: Tree Boss_Skill_Frame_1
+    originalName: 
+    pivot: {x: 0.47530863, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 4
+      width: 162
+      height: 150
+    spriteID: 4a6f01678056b89469ab3c64b3d09b6d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 352, y: 4}
+  - name: Tree Boss_Skill_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: -0.0067114094}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 4
+      width: 170
+      height: 149
+    spriteID: c882646e70a483040a40a37558ac3c05
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 3}
+  - name: Tree Boss_Skill_Frame_3
+    originalName: 
+    pivot: {x: 0.47530863, y: -0.007092199}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 854
+      y: 469
+      width: 162
+      height: 141
+    spriteID: 041a50cb654f4de41ae385114699dbc1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 846, y: 468}
+  - name: Tree Boss_Skill_Frame_4
+    originalName: 
+    pivot: {x: 0.47530863, y: -0.006993007}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 344
+      y: 469
+      width: 162
+      height: 143
+    spriteID: 7a19c90730aaeba42856d9263b8b74f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 468}
+  - name: Tree Boss_Skill_Frame_5
+    originalName: 
+    pivot: {x: 0.47530863, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 690
+      y: 312
+      width: 162
+      height: 147
+    spriteID: a9cbb8a7b4d212046b8a12460ad5517d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 682, y: 312}
+  - name: Tree Boss_Skill_Frame_6
+    originalName: 
+    pivot: {x: 0.4940476, y: -0.006993007}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 514
+      y: 312
+      width: 168
+      height: 143
+    spriteID: 1a1b783e6e150ba42a2a038915fc7806
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 512, y: 311}
+  - name: Tree Boss_Skill_Frame_7
+    originalName: 
+    pivot: {x: 0.4817073, y: -0.007246377}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 523
+      y: 162
+      width: 164
+      height: 138
+    spriteID: cc7eba273fa374944af3c349fcedc12a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 517, y: 161}
+  - name: Tree Boss_Skill_Frame_8
+    originalName: 
+    pivot: {x: 0.47530863, y: -0.007092199}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 162
+      width: 162
+      height: 141
+    spriteID: d00d3ac98c741ba408112ebb616f7a8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 161}
+  - name: Tree Boss_Skill_Frame_9
+    originalName: 
+    pivot: {x: 0.47530863, y: -0.006993007}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 514
+      y: 469
+      width: 162
+      height: 143
+    spriteID: 785c2b0974713764bb2d05b17ae3acbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 506, y: 468}
+  - name: Tree Boss_Skill_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 170
+      height: 150
+    spriteID: 058880ec8c8f8924badf52e3ed9b9833
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Tree Boss_Skill_Frame_11
+    originalName: 
+    pivot: {x: 0.47530863, y: -0.0067114094}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 312
+      width: 162
+      height: 149
+    spriteID: d4125d8e6b1a56d41af6e3cce90730a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -4, y: 311}
+  - name: Tree Boss_Skill_Frame_12
+    originalName: 
+    pivot: {x: 0.4785276, y: -0.007142857}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 352
+      y: 162
+      width: 163
+      height: 140
+    spriteID: 5f6387b525fbbc84d8b14952a7f5169e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 345, y: 161}
+  - name: Tree Boss_Skill_Frame_13
+    originalName: 
+    pivot: {x: 0.47530863, y: -0.0067114094}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 312
+      width: 162
+      height: 149
+    spriteID: 02ef35489bdb9f341929dc28313e835d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 166, y: 311}
+  - name: Tree Boss_Skill_Frame_14
+    originalName: 
+    pivot: {x: 0.47530863, y: -0.0067114094}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 344
+      y: 312
+      width: 162
+      height: 149
+    spriteID: fb120e63ce1137847bc5e39960210702
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 311}
+  - name: Tree Boss_Skill_Frame_15
+    originalName: 
+    pivot: {x: 0.47530863, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 530
+      y: 4
+      width: 162
+      height: 150
+    spriteID: d4d619c5cfb34d04080f279583d0acce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 522, y: 4}
+  - name: Tree Boss_Skill_Frame_16
+    originalName: 
+    pivot: {x: 0.47530863, y: -0.0068493155}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 469
+      width: 162
+      height: 146
+    spriteID: 163a913ed2cf544418d184890c85732e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 469}
+  - name: Tree Boss_Skill_Frame_17
+    originalName: 
+    pivot: {x: 0.4785276, y: -0.0067114094}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 700
+      y: 4
+      width: 163
+      height: 149
+    spriteID: 8460c073eb35a364094562ad1dcf4a3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 693, y: 3}
+  - name: Tree Boss_Skill_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 162
+      width: 170
+      height: 142
+    spriteID: a0275760d19abfb4bbc7ea85a7476475
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 162}
+  - name: Tree Boss_Skill_Frame_19
+    originalName: 
+    pivot: {x: 0.47530863, y: -0.006993007}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 684
+      y: 469
+      width: 162
+      height: 143
+    spriteID: a793e0c2e200b7d489975483689b4efe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 676, y: 468}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1028905567
+    name: Tree Boss_Skill
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Tree Boss_Skill_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: d649bfb4d29efbd489fccd71e488e182
+    - name: Tree Boss_Skill_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: 4a6f01678056b89469ab3c64b3d09b6d
+    - name: Tree Boss_Skill_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: c882646e70a483040a40a37558ac3c05
+    - name: Tree Boss_Skill_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: 041a50cb654f4de41ae385114699dbc1
+    - name: Tree Boss_Skill_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: 7a19c90730aaeba42856d9263b8b74f3
+    - name: Tree Boss_Skill_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: a9cbb8a7b4d212046b8a12460ad5517d
+    - name: Tree Boss_Skill_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: 1a1b783e6e150ba42a2a038915fc7806
+    - name: Tree Boss_Skill_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: cc7eba273fa374944af3c349fcedc12a
+    - name: Tree Boss_Skill_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: d00d3ac98c741ba408112ebb616f7a8e
+    - name: Tree Boss_Skill_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: 785c2b0974713764bb2d05b17ae3acbf
+    - name: Tree Boss_Skill_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: 058880ec8c8f8924badf52e3ed9b9833
+    - name: Tree Boss_Skill_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: d4125d8e6b1a56d41af6e3cce90730a7
+    - name: Tree Boss_Skill_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: 5f6387b525fbbc84d8b14952a7f5169e
+    - name: Tree Boss_Skill_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: 02ef35489bdb9f341929dc28313e835d
+    - name: Tree Boss_Skill_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: fb120e63ce1137847bc5e39960210702
+    - name: Tree Boss_Skill_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: d4d619c5cfb34d04080f279583d0acce
+    - name: Tree Boss_Skill_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 8
+        y: 1
+        width: 162
+        height: 146
+      spriteId: 163a913ed2cf544418d184890c85732e
+    - name: Tree Boss_Skill_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: 8460c073eb35a364094562ad1dcf4a3c
+    - name: Tree Boss_Skill_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: a0275760d19abfb4bbc7ea85a7476475
+    - name: Tree Boss_Skill_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 0
+        y: 0
+        width: 170
+        height: 150
+      spriteId: a793e0c2e200b7d489975483689b4efe
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 170, y: 150}

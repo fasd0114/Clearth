@@ -1,0 +1,39 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BossController : MonoBehaviour
+{
+    public enum BossState { Sleep, Awake, Battle }
+    public BossState currentState = BossState.Sleep;
+    private Animator anim;
+    private TreeBossAI bossAI;
+    public BossHealthUI bossHealthUI;
+
+    private Collider2D bossCollider;
+
+    void Awake()
+    {
+        anim = GetComponent<Animator>();
+        bossAI = GetComponent<TreeBossAI>();
+        bossCollider = GetComponent<Collider2D>();
+
+        if (bossAI != null)
+            bossAI.enabled = false;
+        if (bossCollider != null)
+            bossCollider.enabled = false;
+        if (bossHealthUI != null)
+            bossHealthUI.HideUI();
+    }
+
+    public void StartBattle()
+    {
+        currentState = BossState.Battle;
+        if (bossAI != null)
+            bossAI.enabled = true;
+        if (bossCollider != null)
+            bossCollider.enabled = true;
+        if (bossHealthUI != null)
+            bossHealthUI.ShowBossUI(bossAI);
+    }
+}

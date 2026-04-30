@@ -1,0 +1,963 @@
+fileFormatVersion: 2
+guid: 18184c2c826792042bb882b0b4573e77
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 2
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: character_Tree-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d7741bdd72b26408a964cb55c91e9a
+      internalID: -1443779121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0fb7bb82ca8fe4487d1f3c45552cf7
+      internalID: -579680757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5712484f8b86940a0aa401964066b9
+      internalID: -2010662574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53259eb9c20852245b7d51f6b8c4685f
+      internalID: 1445008471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e528ce5b4673e43a4eb195ec8fd358
+      internalID: 2023517827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddda2fe1ba2bb3c46ae0a225505d4489
+      internalID: -325156135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaad6b2567f4e8542894bff4b10e18bd
+      internalID: 1475145621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c885e74473ea148889208b23ad2262
+      internalID: -168505676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66c4cbd67481c646a39b7e6d04ee6ef
+      internalID: 1084575366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15d032bda69eea429fd5e2a794baa7d
+      internalID: -501568134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc26409797fe5cd43b426e38833a2693
+      internalID: 1853199423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3025
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca09740d1c03b654aab9fca1b4f95da9
+      internalID: -708471524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a63161aa61c56048afbce7a53fa8f09
+      internalID: -2131785906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 3575
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcca8bf35beedc419b36c3bdc3be0bd
+      internalID: 866911093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 3850
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d78296a081bcb4f8366ffa5f79fba2
+      internalID: -478333108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 4125
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5e0a0fedbb1394a92fc6824854b110
+      internalID: 269045330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead19518dda589e4ca4dc7f967ec992e
+      internalID: 1785274289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 4675
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f21e88d3d0bc844a38abf1457848df
+      internalID: 1569864963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022602ad96d66024aa8619bfa83f0d8f
+      internalID: 771132057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 5225
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c00efef555b3d4dabc0092e4c156a3
+      internalID: 514757412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0478a8b2d6c814b4d822ae457280ce3b
+      internalID: -1639646637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 5775
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2010d39d2f7a2b4497e1a9f3f77fc0f
+      internalID: -295020452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 6050
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c7ef10b838ac347848555e33bd725d
+      internalID: 570575087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 6325
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8752724953efb2941a808db5cbbd21bb
+      internalID: 943385844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d719a658c98ecca46a14a4fbd00d137a
+      internalID: 211737334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 6875
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b217648c0b522c8449c37fc08b1ddc24
+      internalID: -172857629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 7150
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb84809217262ca4fa3f26a15f328c2a
+      internalID: 1500489392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 7425
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268eeb10074836543adb25440ed2b62b
+      internalID: -1408168883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 7700
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8bdb324084c5049a4b26d0b5fd7c2d
+      internalID: 1369255856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 7975
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b89e16d9806a84684f3cfa65ba4253
+      internalID: -555776283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 8250
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c40a0485b2a5c46ae5c70d9af0518a
+      internalID: 418401972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 8525
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c80a242998ef94fa9ad69976ea4271
+      internalID: 454773624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dccc9c768182e71488563f5ceb9258f3
+      internalID: -1131195249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 9075
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a1b700fbf553c4faa79cee32ec929f
+      internalID: -652496579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 9350
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ff35d1650278c4491c16b51ad6ed4d
+      internalID: 222854084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 9625
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6d536004c0255438fc93ce2ac7a9ee
+      internalID: -923748028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 9900
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a734a6aa38a154b97b5250363633fb
+      internalID: 599691796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_Tree-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 10175
+        y: 0
+        width: 273
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7119962f24902f04b976f15e6a364be8
+      internalID: 1408354256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      character_Tree-Sheet_0: -1443779121
+      character_Tree-Sheet_1: -579680757
+      character_Tree-Sheet_10: 1853199423
+      character_Tree-Sheet_11: -708471524
+      character_Tree-Sheet_12: -2131785906
+      character_Tree-Sheet_13: 866911093
+      character_Tree-Sheet_14: -478333108
+      character_Tree-Sheet_15: 269045330
+      character_Tree-Sheet_16: 1785274289
+      character_Tree-Sheet_17: 1569864963
+      character_Tree-Sheet_18: 771132057
+      character_Tree-Sheet_19: 514757412
+      character_Tree-Sheet_2: -2010662574
+      character_Tree-Sheet_20: -1639646637
+      character_Tree-Sheet_21: -295020452
+      character_Tree-Sheet_22: 570575087
+      character_Tree-Sheet_23: 943385844
+      character_Tree-Sheet_24: 211737334
+      character_Tree-Sheet_25: -172857629
+      character_Tree-Sheet_26: 1500489392
+      character_Tree-Sheet_27: -1408168883
+      character_Tree-Sheet_28: 1369255856
+      character_Tree-Sheet_29: -555776283
+      character_Tree-Sheet_3: 1445008471
+      character_Tree-Sheet_30: 418401972
+      character_Tree-Sheet_31: 454773624
+      character_Tree-Sheet_32: -1131195249
+      character_Tree-Sheet_33: -652496579
+      character_Tree-Sheet_34: 222854084
+      character_Tree-Sheet_35: -923748028
+      character_Tree-Sheet_36: 599691796
+      character_Tree-Sheet_37: 1408354256
+      character_Tree-Sheet_4: 2023517827
+      character_Tree-Sheet_5: -325156135
+      character_Tree-Sheet_6: 1475145621
+      character_Tree-Sheet_7: -168505676
+      character_Tree-Sheet_8: 1084575366
+      character_Tree-Sheet_9: -501568134
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

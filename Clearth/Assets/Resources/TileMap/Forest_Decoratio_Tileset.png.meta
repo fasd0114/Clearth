@@ -1,0 +1,1953 @@
+fileFormatVersion: 2
+guid: 9a7ea7a157ee05c4fad9d2314f217bff
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1193
+        width: 43
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbd9034975e1394f8c154f9c79f3235
+      internalID: 1500413134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1193
+        width: 42
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca31292062e3cbe49ad6b926aff13312
+      internalID: -874019515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_2
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1193
+        width: 38
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12c77a57ce8ef541ac02fc36831c9ed
+      internalID: -1005199577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_3
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1193
+        width: 25
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e5d0ea405c34d40970e0231090b17a
+      internalID: 628949246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_4
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 1193
+        width: 18
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d3e1c8de424de4f9cd0503e7593fb7
+      internalID: 1287512772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_5
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1193
+        width: 15
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9cf9ff1a66f8d4dad2fa71c9f330a4
+      internalID: -489591489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_6
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1113
+        width: 51
+        height: 96
+      alignment: 9
+      pivot: {x: 0.6362879, y: 0.0002861023}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4abce72a3664bc469ba7c2191f070b6
+      internalID: 1039624129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_7
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1113
+        width: 45
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ac15ad9bbdf3040ae46895ffb82063
+      internalID: 497001259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1145
+        width: 47
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d79cfcd746ff544e82548aa9ecbcd3a
+      internalID: 13988092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_9
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1145
+        width: 38
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbc9c2dcf871974c9710d9d8f6bc85d
+      internalID: 1579103919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_10
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1145
+        width: 22
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43232fc70eec934e8322177a11113ec
+      internalID: -1816792761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_11
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1145
+        width: 19
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b5fef5511f63941b728372ea5351c6
+      internalID: 899758676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_12
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1145
+        width: 14
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051e50f679f9bfc4facf18ce1a53133a
+      internalID: 346825925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_13
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1145
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b377b73a81a934b45be71ab5dacd309b
+      internalID: 644610587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_14
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1145
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b3bb52c1bbf9d488a8c26d9492bb25
+      internalID: 1352907052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_15
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1145
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e02211f229f074f897dd2ba45c900b
+      internalID: 821951397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_16
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1113
+        width: 42
+        height: 78
+      alignment: 9
+      pivot: {x: 0.5806928, y: -0.00071207684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5215d1d1180ebc74aa3fe7d4fdacf7fe
+      internalID: 37999005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_17
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 1113
+        width: 34
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6599516, y: -0.0007209778}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb213e118c067e46b08d68711594a44
+      internalID: -1872305838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_18
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1113
+        width: 37
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc9efb082af3e647a2b01da7e706e0e
+      internalID: 517665885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_19
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 1113
+        width: 32
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf87034bcfadae458b69c8c00844c12
+      internalID: -1979230970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1097
+        width: 47
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25854e0222e1ad248bb066e54dfda69d
+      internalID: -462914748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_21
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1097
+        width: 38
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb440013d7129e549a2745bcf5e78307
+      internalID: -1584427551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_22
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1097
+        width: 22
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55a038c8701f8c4785fda5361812796
+      internalID: 361077819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_23
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1097
+        width: 19
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54fe031a95c755f4b8b6bc281f22ca5d
+      internalID: 646053670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_24
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1097
+        width: 14
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db912043b700d894c9e506b503b42a20
+      internalID: 1771721246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_25
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 1097
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d36b2d707ebe1d49a4546e442a32310
+      internalID: -817396132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_26
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1097
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ddc1e0448488945a235dc8d3cdd82e
+      internalID: 735575724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_27
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1097
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d4ce073b234ef48a3ba5ad32570dbd
+      internalID: 1620596600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1049
+        width: 47
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b114dcb5ae4ab4280409c3d4746bab
+      internalID: 1674329906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_29
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1049
+        width: 38
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99e78869de7ad242a2d3789787e0f88
+      internalID: 124729885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_30
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1049
+        width: 22
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816e02ea237b7b74183e549fa94475f0
+      internalID: -1511817155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_31
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1049
+        width: 19
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40df4a0ac6934784e92f3e2b808f573e
+      internalID: 1755193510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_32
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1049
+        width: 14
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109df2525f0e41542bcd3e24ae6d7c9b
+      internalID: 1489272136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_33
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1049
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c05ad0c46f6684f90d66903738b50f
+      internalID: -510507928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_34
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1049
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a799898ac9d9df4c82a13149734c4e5
+      internalID: -243555278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_35
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1049
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c481f17fdd8f84a83db71ca589be04
+      internalID: 331060822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_36
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1049
+        width: 28
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680f4129f12b5da439ef4cbffca7f3de
+      internalID: -1099044359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_37
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1049
+        width: 19
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1148a56e69d0a294292af008e6e5dec2
+      internalID: 1805412695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_38
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1049
+        width: 18
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfe51d2d556bd14eb45d44740e0bae7
+      internalID: -1540668989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_39
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1049
+        width: 10
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767c573885dc4e44688d87998b324861
+      internalID: 1003781301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_40
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1049
+        width: 61
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3574ce409550cf24283cdc4cfebe3a61
+      internalID: 582935147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1001
+        width: 47
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f619030e6da2bd54eb00a72c1148bf96
+      internalID: -916238190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_42
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1001
+        width: 38
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b210a045ae03fb041aa8e20c2d552ef3
+      internalID: -1886754318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_43
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1001
+        width: 22
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88be22f5b27769b439a3d9df37830122
+      internalID: -164012009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_44
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1001
+        width: 19
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f205cde66733dd458fa3c42796dba1c
+      internalID: 426967560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_45
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1001
+        width: 14
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7f1e21f031b8c478be30a8b3481ac0
+      internalID: 216567117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_46
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 1001
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d3c081aefc9794d86e16b0a52d7ca8
+      internalID: -713572366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_47
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1001
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997cfac4f48e48d42b3f8ddcde63bd59
+      internalID: -956792675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_48
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1001
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b7513affcc0134b9fbe0e92ba2fe42
+      internalID: -1666216915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_49
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 905
+        width: 72
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd06a88516db6d04b8681147979bfd98
+      internalID: -426354173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_50
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 953
+        width: 47
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3710aa4fc8c8cc24bbe956ea7b4ae63f
+      internalID: 1381875555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_51
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 953
+        width: 38
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58508eac657a37d409a3273ea9327e77
+      internalID: -180184091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_52
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 953
+        width: 22
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4672a2298be61124699fd7f32ee9b2d4
+      internalID: -1216053568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_53
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 953
+        width: 19
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3372fb71e9f7b439fb4fed690bb4c8
+      internalID: 927551141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_54
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 953
+        width: 14
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9699244f617c2f4408da15a67d984bb7
+      internalID: -368024340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_55
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 953
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a970e9e98d887442b82d68a62ae658f
+      internalID: -1691711992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_56
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 953
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf3693c8712a2d48b1046670664e0cb
+      internalID: 77413102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_57
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 953
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19510b47eac8cd74e8a0c97bafa0ae8a
+      internalID: -862337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_58
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 905
+        width: 74
+        height: 88
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c0fe268592f7f4f908f01e24ceb8a3
+      internalID: 212948307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_59
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 905
+        width: 51
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651ae9ec8a1b84f45b73547a5d47727e
+      internalID: -70957798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_60
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 905
+        width: 56
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f70fc6eb20cb6204b9933c7a2dd8ec6b
+      internalID: 211452732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_61
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 905
+        width: 57
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f72dbdcc6e26fb4fbe5f96eb6d637d2
+      internalID: -1016776343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_62
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 905
+        width: 44
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9edc9c77d654dda4e84ae2e362bc1057
+      internalID: -1742033544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 905
+        width: 47
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a27471e290c3af4989d535b706c1eee
+      internalID: 2119952536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_64
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 905
+        width: 38
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503afd8af9b81c049a023b13b7f2e479
+      internalID: -953116328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_65
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 905
+        width: 22
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67174f1392a1ad4ebdca03371527121
+      internalID: 251554542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_66
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 905
+        width: 19
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f222782e1eacc384f8b139c4582da789
+      internalID: -457013868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_67
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 905
+        width: 14
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245a2d00ddbc6f44fa651b21a3872711
+      internalID: 1102381406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_68
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 905
+        width: 13
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369c617a2f6455f45b21696c5e43d3cd
+      internalID: 871319057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_69
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 905
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c646c9ae46849754bb57d8bab6d3a6d2
+      internalID: -2107212468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_70
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 905
+        width: 12
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf44b250e5ddc54e84faedde2b7d4e8
+      internalID: -1140367067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_71
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 537
+        width: 153
+        height: 288
+      alignment: 9
+      pivot: {x: 0.6390194, y: 0.00020726521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5a431748ce50f42b4b88cbe39ce73a
+      internalID: 1426207658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_72
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 537
+        width: 126
+        height: 234
+      alignment: 9
+      pivot: {x: 0.5870257, y: -0.000000260834}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10a7717543d5b642b735818639bf767
+      internalID: -1588321433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_73
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 537
+        width: 102
+        height: 192
+      alignment: 9
+      pivot: {x: 0.6596626, y: 0.00018024445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3053e2faaed790f4a8f051d14fd25637
+      internalID: 703012339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_74
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 537
+        width: 135
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a96348e78897b469fc06db4b58e505
+      internalID: -465121792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_75
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 537
+        width: 111
+        height: 234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a92dc0637f8bb4eaba4a57f77fbb88
+      internalID: -1414379868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_76
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 537
+        width: 96
+        height: 192
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc405b163061ab489cd8c7fe5734af7
+      internalID: -641925895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_77
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 153
+        width: 216
+        height: 336
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc84239ffb24cb47afd91e2a648fe54
+      internalID: 437503893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_78
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 153
+        width: 222
+        height: 264
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2b259ac69971048b04c5d3293de185
+      internalID: -510272308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_79
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 153
+        width: 153
+        height: 225
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f24b1e86f6cdbe4ba01aa085d7d8b94
+      internalID: 65960780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_80
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 153
+        width: 168
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d7dd3b5e22920418ef534c1e34c820
+      internalID: -1061039130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_81
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 153
+        width: 171
+        height: 240
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a26278be773594bbaa64992051a278
+      internalID: 956766450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_Decoratio_Tileset_82
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 153
+        width: 132
+        height: 210
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a5849d67893d84fa7c588c544b2535
+      internalID: -1620547132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Forest_Decoratio_Tileset_0: 1500413134
+      Forest_Decoratio_Tileset_1: -874019515
+      Forest_Decoratio_Tileset_10: -1816792761
+      Forest_Decoratio_Tileset_11: 899758676
+      Forest_Decoratio_Tileset_12: 346825925
+      Forest_Decoratio_Tileset_13: 644610587
+      Forest_Decoratio_Tileset_14: 1352907052
+      Forest_Decoratio_Tileset_15: 821951397
+      Forest_Decoratio_Tileset_16: 37999005
+      Forest_Decoratio_Tileset_17: -1872305838
+      Forest_Decoratio_Tileset_18: 517665885
+      Forest_Decoratio_Tileset_19: -1979230970
+      Forest_Decoratio_Tileset_2: -1005199577
+      Forest_Decoratio_Tileset_20: -462914748
+      Forest_Decoratio_Tileset_21: -1584427551
+      Forest_Decoratio_Tileset_22: 361077819
+      Forest_Decoratio_Tileset_23: 646053670
+      Forest_Decoratio_Tileset_24: 1771721246
+      Forest_Decoratio_Tileset_25: -817396132
+      Forest_Decoratio_Tileset_26: 735575724
+      Forest_Decoratio_Tileset_27: 1620596600
+      Forest_Decoratio_Tileset_28: 1674329906
+      Forest_Decoratio_Tileset_29: 124729885
+      Forest_Decoratio_Tileset_3: 628949246
+      Forest_Decoratio_Tileset_30: -1511817155
+      Forest_Decoratio_Tileset_31: 1755193510
+      Forest_Decoratio_Tileset_32: 1489272136
+      Forest_Decoratio_Tileset_33: -510507928
+      Forest_Decoratio_Tileset_34: -243555278
+      Forest_Decoratio_Tileset_35: 331060822
+      Forest_Decoratio_Tileset_36: -1099044359
+      Forest_Decoratio_Tileset_37: 1805412695
+      Forest_Decoratio_Tileset_38: -1540668989
+      Forest_Decoratio_Tileset_39: 1003781301
+      Forest_Decoratio_Tileset_4: 1287512772
+      Forest_Decoratio_Tileset_40: 582935147
+      Forest_Decoratio_Tileset_41: -916238190
+      Forest_Decoratio_Tileset_42: -1886754318
+      Forest_Decoratio_Tileset_43: -164012009
+      Forest_Decoratio_Tileset_44: 426967560
+      Forest_Decoratio_Tileset_45: 216567117
+      Forest_Decoratio_Tileset_46: -713572366
+      Forest_Decoratio_Tileset_47: -956792675
+      Forest_Decoratio_Tileset_48: -1666216915
+      Forest_Decoratio_Tileset_49: -426354173
+      Forest_Decoratio_Tileset_5: -489591489
+      Forest_Decoratio_Tileset_50: 1381875555
+      Forest_Decoratio_Tileset_51: -180184091
+      Forest_Decoratio_Tileset_52: -1216053568
+      Forest_Decoratio_Tileset_53: 927551141
+      Forest_Decoratio_Tileset_54: -368024340
+      Forest_Decoratio_Tileset_55: -1691711992
+      Forest_Decoratio_Tileset_56: 77413102
+      Forest_Decoratio_Tileset_57: -862337
+      Forest_Decoratio_Tileset_58: 212948307
+      Forest_Decoratio_Tileset_59: -70957798
+      Forest_Decoratio_Tileset_6: 1039624129
+      Forest_Decoratio_Tileset_60: 211452732
+      Forest_Decoratio_Tileset_61: -1016776343
+      Forest_Decoratio_Tileset_62: -1742033544
+      Forest_Decoratio_Tileset_63: 2119952536
+      Forest_Decoratio_Tileset_64: -953116328
+      Forest_Decoratio_Tileset_65: 251554542
+      Forest_Decoratio_Tileset_66: -457013868
+      Forest_Decoratio_Tileset_67: 1102381406
+      Forest_Decoratio_Tileset_68: 871319057
+      Forest_Decoratio_Tileset_69: -2107212468
+      Forest_Decoratio_Tileset_7: 497001259
+      Forest_Decoratio_Tileset_70: -1140367067
+      Forest_Decoratio_Tileset_71: 1426207658
+      Forest_Decoratio_Tileset_72: -1588321433
+      Forest_Decoratio_Tileset_73: 703012339
+      Forest_Decoratio_Tileset_74: -465121792
+      Forest_Decoratio_Tileset_75: -1414379868
+      Forest_Decoratio_Tileset_76: -641925895
+      Forest_Decoratio_Tileset_77: 437503893
+      Forest_Decoratio_Tileset_78: -510272308
+      Forest_Decoratio_Tileset_79: 65960780
+      Forest_Decoratio_Tileset_8: 13988092
+      Forest_Decoratio_Tileset_80: -1061039130
+      Forest_Decoratio_Tileset_81: 956766450
+      Forest_Decoratio_Tileset_82: -1620547132
+      Forest_Decoratio_Tileset_9: 1579103919
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

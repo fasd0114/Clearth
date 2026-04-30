@@ -1,0 +1,531 @@
+fileFormatVersion: 2
+guid: 879aed6c853cdab41ab2b665bed91ff0
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: WoodSlime_Walk_Frame_0
+    originalName: 
+    pivot: {x: 0.45999998, y: -0.23076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 204
+      width: 50
+      height: 26
+    spriteID: 6a5e74d0c9ad48d4999505bd48916c22
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 204}
+  - name: WoodSlime_Walk_Frame_1
+    originalName: 
+    pivot: {x: 0.47058827, y: -0.24}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 104
+      width: 51
+      height: 25
+    spriteID: 95caf582a58010c49b19bf345220ce20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 104}
+  - name: WoodSlime_Walk_Frame_2
+    originalName: 
+    pivot: {x: 0.4716981, y: -0.24}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 171
+      width: 53
+      height: 25
+    spriteID: 88b15dcaf15ac1e4688c467d2848ce8c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 171}
+  - name: WoodSlime_Walk_Frame_3
+    originalName: 
+    pivot: {x: 0.42592594, y: -0.24}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 72
+      width: 54
+      height: 25
+    spriteID: a02a284daa6341b49a9c2630dfe853a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 72}
+  - name: WoodSlime_Walk_Frame_4
+    originalName: 
+    pivot: {x: 0.4074074, y: -0.23076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 54
+      height: 26
+    spriteID: 4e09b76028081644f9ed9794d9d48f29
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: WoodSlime_Walk_Frame_5
+    originalName: 
+    pivot: {x: 0.40384617, y: -0.24}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 4
+      width: 52
+      height: 25
+    spriteID: 58abcee0a1f2f6740b221a494ed29e43
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 4}
+  - name: WoodSlime_Walk_Frame_6
+    originalName: 
+    pivot: {x: 0.42, y: -0.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 170
+      width: 50
+      height: 24
+    spriteID: c326405e5a1ff724d9ebfd2b8b3c4895
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 170}
+  - name: WoodSlime_Walk_Frame_7
+    originalName: 
+    pivot: {x: 0.45999998, y: -0.23076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 37
+      width: 50
+      height: 26
+    spriteID: 9702ce40c2f17bc46b569043e93807ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 37}
+  - name: WoodSlime_Walk_Frame_8
+    originalName: 
+    pivot: {x: 0.47058827, y: -0.24}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 137
+      width: 51
+      height: 25
+    spriteID: aebafb209c4c78b428737a36855c2753
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 137}
+  - name: WoodSlime_Walk_Frame_9
+    originalName: 
+    pivot: {x: 0.46296296, y: -0.24}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 105
+      width: 54
+      height: 25
+    spriteID: 20c869412a6b3c44b9156ac3bf573d98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 105}
+  - name: WoodSlime_Walk_Frame_10
+    originalName: 
+    pivot: {x: 0.42592594, y: -0.24}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 138
+      width: 54
+      height: 25
+    spriteID: 5171755f7dc857840b11aaefd0393985
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 138}
+  - name: WoodSlime_Walk_Frame_11
+    originalName: 
+    pivot: {x: 0.41509435, y: -0.23076925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 38
+      width: 53
+      height: 26
+    spriteID: 86c1394fd3a6989458bb01c6962b0c28
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 38}
+  - name: WoodSlime_Walk_Frame_12
+    originalName: 
+    pivot: {x: 0.40384617, y: -0.24}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 71
+      width: 52
+      height: 25
+    spriteID: c6670fc82c311c44abf9872d06d029ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 71}
+  - name: WoodSlime_Walk_Frame_13
+    originalName: 
+    pivot: {x: 0.42, y: -0.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 202
+      width: 50
+      height: 24
+    spriteID: c4de2ce41b6f4e949ab4adc7b7fbcc36
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 202}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -630562625
+    name: WoodSlime_Walk
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: WoodSlime_Walk_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 9
+        y: 6
+        width: 50
+        height: 26
+      spriteId: 6a5e74d0c9ad48d4999505bd48916c22
+    - name: WoodSlime_Walk_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 8
+        y: 6
+        width: 51
+        height: 25
+      spriteId: 95caf582a58010c49b19bf345220ce20
+    - name: WoodSlime_Walk_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 7
+        y: 6
+        width: 53
+        height: 25
+      spriteId: 88b15dcaf15ac1e4688c467d2848ce8c
+    - name: WoodSlime_Walk_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 9
+        y: 6
+        width: 54
+        height: 25
+      spriteId: a02a284daa6341b49a9c2630dfe853a5
+    - name: WoodSlime_Walk_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 10
+        y: 6
+        width: 54
+        height: 26
+      spriteId: 4e09b76028081644f9ed9794d9d48f29
+    - name: WoodSlime_Walk_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 11
+        y: 6
+        width: 52
+        height: 25
+      spriteId: 58abcee0a1f2f6740b221a494ed29e43
+    - name: WoodSlime_Walk_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 11
+        y: 6
+        width: 50
+        height: 24
+      spriteId: c326405e5a1ff724d9ebfd2b8b3c4895
+    - name: WoodSlime_Walk_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 9
+        y: 6
+        width: 50
+        height: 26
+      spriteId: 9702ce40c2f17bc46b569043e93807ec
+    - name: WoodSlime_Walk_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 8
+        y: 6
+        width: 51
+        height: 25
+      spriteId: aebafb209c4c78b428737a36855c2753
+    - name: WoodSlime_Walk_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 7
+        y: 6
+        width: 54
+        height: 25
+      spriteId: 20c869412a6b3c44b9156ac3bf573d98
+    - name: WoodSlime_Walk_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 9
+        y: 6
+        width: 54
+        height: 25
+      spriteId: 5171755f7dc857840b11aaefd0393985
+    - name: WoodSlime_Walk_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 10
+        y: 6
+        width: 53
+        height: 26
+      spriteId: 86c1394fd3a6989458bb01c6962b0c28
+    - name: WoodSlime_Walk_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 11
+        y: 6
+        width: 52
+        height: 25
+      spriteId: c6670fc82c311c44abf9872d06d029ea
+    - name: WoodSlime_Walk_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 11
+        y: 6
+        width: 50
+        height: 24
+      spriteId: c4de2ce41b6f4e949ab4adc7b7fbcc36
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 64}
