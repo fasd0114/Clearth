@@ -31,7 +31,7 @@ public class TreeBossAI : MonoBehaviour
     public float rootAttackLifeTime = 1.5f;   // 뿌리 오브젝트 유지 시간
     public int rootSpawnCount = 3;            
 
-    [Header("Spawn Range")]
+    [Header("Pattern-Root Spawn Range")]
     public Transform spawnMinPoint;
     public Transform spawnMaxPoint;
     public float minSpawnX = -8f;     // fallback
@@ -88,7 +88,7 @@ public class TreeBossAI : MonoBehaviour
                 else
                     yield return StartCoroutine(Pattern2_SeedRain());
 
-                // 패턴 간 인터벌 (인터럽트 가능)
+                // 패턴 간 인터벌
                 float timer = 0f;
                 while (timer < patternInterval && !inSpecialPhase && !isDead)
                 {
@@ -108,23 +108,29 @@ public class TreeBossAI : MonoBehaviour
     // 바닥 뿌리
     private IEnumerator Pattern1_RootAttack()
     {
+        // 패턴 시작 설정 및 애니메이션 실행
         isCastingPattern = true;
         if (anim != null)
             anim.SetTrigger("Attack1");
 
+        // 뿌리 갯수 최소치 제한, 5개가 넘어갈 시 패턴 중복 문제 발생->늘리려면 패턴간 인터벌 조절
         int attackCount = Mathf.Min(rootSpawnCount, 5);
 
         for (int i = 0; i < attackCount; i++)
         {
+            // 패턴 실행 중 인터럽트 체크
             if (cancelCurrentPattern || inSpecialPhase || isDead)
                 break;
 
+            // 스폰 위치 계산
             float minX = spawnMinPoint ? spawnMinPoint.position.x : minSpawnX;
             float maxX = spawnMaxPoint ? spawnMaxPoint.position.x : maxSpawnX;
 
             float playerX = player ? player.position.x : 0f;
             float allowedMin = Mathf.Max(minX, playerX - playerSpawnRadius);
             float allowedMax = Mathf.Min(maxX, playerX + playerSpawnRadius);
+
+            // 계산 범위가 비정상적이면 전체 맵 범위로 재설정
             if (allowedMin > allowedMax)
             {
                 allowedMin = minX;
@@ -132,16 +138,20 @@ public class TreeBossAI : MonoBehaviour
             }
 
             float randX = Random.Range(allowedMin, allowedMax);
+
+            // 높이가 지정되어 있으면 랜덤하게 선택, 없으면 보스 높이 사용
             float spawnY = (rootPoints != null && rootPoints.Length > 0)
                 ? rootPoints[Random.Range(0, rootPoints.Length)].position.y
                 : transform.position.y;
 
             Vector3 spawnPos = new Vector3(randX, spawnY, 0f);
 
+            // 경고 이펙트 생성
             GameObject warningInstance = null;
             if (rootWarningPrefab)
                 warningInstance = Instantiate(rootWarningPrefab, spawnPos, Quaternion.identity);
 
+            // 경고 대기 시간
             float waited = 0f;
             while (waited < rootWarningTime)
             {
@@ -150,22 +160,26 @@ public class TreeBossAI : MonoBehaviour
                 yield return null;
             }
 
+            // 대기 후 상태 변화 시 경고 표시 삭제 및 패턴 종료
             if (cancelCurrentPattern || inSpecialPhase || isDead)
             {
                 if (warningInstance) Destroy(warningInstance);
                 break;
             }
 
+            // 경고 표시 제거 
             if (warningInstance) Destroy(warningInstance);
 
+            // 공격 시작
             Managers.Sound.Play("TreeAttack", 0.2f);
-
             GameObject rootInstance = Instantiate(rootAttackPrefab, spawnPos, Quaternion.identity);
             Destroy(rootInstance, rootAttackLifeTime);
 
+            // 뿌리 생성 간격
             yield return new WaitForSeconds(0.3f);
         }
 
+        // 패턴 종료 딜레이 
         yield return new WaitForSeconds(0.5f);
         isCastingPattern = false;
     }
@@ -178,6 +192,7 @@ public class TreeBossAI : MonoBehaviour
         if (anim != null)
             anim.SetTrigger("Attack2");
 
+        // 화면 밖 스폰 높이 계산
         Camera cam = Camera.main;
         if (cam == null)
         {
@@ -185,6 +200,7 @@ public class TreeBossAI : MonoBehaviour
             yield break;
         }
 
+        // 화면 높이와 너비 기준 스폰 좌표 설정
         float camHeight = 2f * cam.orthographicSize;
         float camWidth = camHeight * cam.aspect;
         Vector3 camPos = cam.transform.position;
@@ -193,6 +209,7 @@ public class TreeBossAI : MonoBehaviour
 
         for (int i = 0; i < seedCount; i++)
         {
+            // 패턴 실행 중 인터럽트 체크
             if (cancelCurrentPattern || inSpecialPhase || isDead)
                 break;
 
@@ -202,9 +219,10 @@ public class TreeBossAI : MonoBehaviour
 
             Vector3 spawnPos = new Vector3(randX, spawnY, 0f);
 
+            // 씨앗 생성
             Instantiate(seedPrefab, spawnPos, Quaternion.identity);
 
-            // interval 동안 인터럽트 가능 대기
+            // 씨앗 생성 간격
             float waited = 0f;
             while (waited < seedSpawnInterval)
             {
@@ -218,7 +236,7 @@ public class TreeBossAI : MonoBehaviour
                 break;
         }
 
-        // 패턴 끝 여유 시간
+        // 모든 씨앗 생성 후 딜레이
         if (!cancelCurrentPattern && !inSpecialPhase && !isDead)
         {
             float tailWait = 0.5f;
