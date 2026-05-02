@@ -41,6 +41,7 @@ public class BossCutsceneManager : MonoBehaviour
         playerController = player.GetComponent<PlayerController>();
         Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
 
+        // 플레이어 제어권 상실 및 물리 멈춤
         if (playerController != null)
             playerController.enabled = false;
 
@@ -57,15 +58,17 @@ public class BossCutsceneManager : MonoBehaviour
             playerAnim.Play("Idle");
         }
 
-        // 블랙바 등장
+        // 연출 시작
         if (barController != null)
             yield return StartCoroutine(barController.ShowBars());
 
-        // 보스 깨어남
-        if (bossAnimator != null)
-            bossAnimator.SetTrigger("WakeUp");
+        // 보스 상태를 Awake로 변경
+        if (bossController != null)
+        {
+            bossController.ChangeState(BossController.BossState.Awake);
+    }
 
-        // 플레이어 후퇴 시작
+        // 플레이어 후퇴 연출 시작
         if (playerAnim != null)
             playerAnim.SetTrigger("Cutscene");
 
@@ -82,6 +85,7 @@ public class BossCutsceneManager : MonoBehaviour
             }
         }
 
+        // 플레이어 도착 및 연출 종료 대기
         if (rb != null)
         {
             rb.velocity = Vector2.zero;
@@ -91,19 +95,26 @@ public class BossCutsceneManager : MonoBehaviour
         playerAnim.ResetTrigger("Cutscene");
         playerAnim.SetTrigger("CutsceneArrive");
         playerAnim.SetBool("isRunning", false);
+
         yield return new WaitUntil(() =>
             playerAnim.GetCurrentAnimatorStateInfo(0).IsName("Cutscene_Arrive") &&
             playerAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.99f
         );
-        playerAnim.Play("Idle"); 
+        playerAnim.Play("Idle");
 
+        // 연출 마무리 단계
         yield return new WaitForSeconds(2.5f);
 
         if (barController != null)
             yield return StartCoroutine(barController.HideBars());
 
-        bossController.StartBattle();
+        // 보스 상태를 Battle로 변경
+        if (bossController != null)
+        {
+            bossController.ChangeState(BossController.BossState.Battle);
+    }
 
+        // 플레이어 제어권 복구
         if (rb != null)
             rb.isKinematic = false;
 

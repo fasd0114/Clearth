@@ -26,14 +26,23 @@ public class BossController : MonoBehaviour
             bossHealthUI.HideUI();
     }
 
-    public void StartBattle()
+    public void ChangeState(BossState newState)
     {
-        currentState = BossState.Battle;
-        if (bossAI != null)
-            bossAI.enabled = true;
-        if (bossCollider != null)
-            bossCollider.enabled = true;
-        if (bossHealthUI != null)
-            bossHealthUI.ShowBossUI(bossAI);
+        currentState = newState;
+
+        switch (currentState)
+        {
+            case BossState.Awake:
+                // 상태가 Awake로 애니메이션 실행
+                if (anim != null) anim.SetTrigger("WakeUp");
+                break;
+
+            case BossState.Battle:
+                // 배틀 로직 수행
+                if (bossAI != null) bossAI.enabled = true;
+                if (bossCollider != null) bossCollider.enabled = true;
+                if (bossHealthUI != null) bossHealthUI.ShowBossUI(bossAI);
+                break;
+        }
     }
 }
