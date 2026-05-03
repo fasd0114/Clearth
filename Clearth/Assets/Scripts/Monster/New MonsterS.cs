@@ -365,37 +365,36 @@ public class NewMonsterS : MonoBehaviour
     }
 
     // 💥 애니메이션 이벤트에서 호출할 함수
-public void EnableAttackCollider()
-{
-    if (attackCollider != null)
+    public void EnableAttackCollider()
     {
-        attackCollider.enabled = true;
-        Debug.Log($"{gameObject.name} ▶ 공격 콜라이더 활성화");
+        if (attackCollider != null)
+        {
+            attackCollider.enabled = true;
+            Debug.Log($"{gameObject.name} ▶ 공격 콜라이더 활성화");
             string monsterName = gameObject.name.Replace("(Clone)", "").Trim();
 
             if (monsterName.Contains("WoodSlime"))
             {
-                Managers.Sound.Play("TreeAttack",0.2f);
+                Managers.Sound.Play("TreeAttack", 0.2f);
             }
             else if (monsterName.Contains("Plant"))
             {
-                Managers.Sound.Play("FlowerAttack",0.5f);
+                Managers.Sound.Play("FlowerAttack", 0.5f);
             }
             else if (monsterName.Contains("Golem"))
             {
-                Managers.Sound.Play("GolemAttack",0.5f);
+                Managers.Sound.Play("GolemAttack", 0.5f);
             }
         }
-}
-
-// 💥 애니메이션 이벤트에서 호출할 함수
-public void DisableAttackCollider()
-{
-    if (attackCollider != null)
-    {
-        attackCollider.enabled = false;
-        Debug.Log($"{gameObject.name} ▶ 공격 콜라이더 비활성화");
     }
-}
 
+    // 💥 애니메이션 이벤트에서 호출할 함수
+    public void DisableAttackCollider()
+    {
+        if (attackCollider != null)
+        {
+            attackCollider.enabled = false;
+            Debug.Log($"{gameObject.name} ▶ 공격 콜라이더 비활성화");
+        }
+    }
 }

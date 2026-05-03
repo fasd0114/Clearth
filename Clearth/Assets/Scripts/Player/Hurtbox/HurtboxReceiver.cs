@@ -17,10 +17,11 @@ public class HurtboxReceiver : MonoBehaviour
         var col = GetComponent<Collider2D>();
         col.isTrigger = true;
     }
-
-    void OnTriggerEnter2D(Collider2D other)
-        => player?.TryDamageFrom(other);
-
-    void OnTriggerStay2D(Collider2D other)
-        => player?.TryDamageFrom(other);
+    public void OnReceiveDamage(int amount)
+    {
+        if (player != null)
+        {
+            player.TakeDamage(amount);
+        }
+    }
 }

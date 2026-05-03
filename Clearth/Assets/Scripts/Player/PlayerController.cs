@@ -400,37 +400,12 @@ public class PlayerController : MonoBehaviour
     {
         isJumpAttacking = false;
     }
-
-    public void TryDamageFrom(Collider2D other)
-    {
-        if (isInvincible) return;
-
-        // 'Monster' 레이어에서 데미지를 받는 로직
-        if (other.gameObject.layer == monsterLayer)
-        {
-            TakeDamage(1);
-        }
-
-        // 'Trap' 태그를 가진 오브젝트에서 데미지를 받는 로직
-        if (other.CompareTag("Trap"))
-        {
-            // trapDamageCooldown 동안에만 데미지를 주도록 설정
-            trapDamageTimer += Time.deltaTime;
-            if (trapDamageTimer >= trapDamageCooldown)
-            {
-                TakeDamage(2);
-                // trap에 부딪히면 데미지 2
-                trapDamageTimer = 0f;  // 타이머 초기화
-            }
-        }
-    }
-
-
     public void TakeDamage(int dmg)
     {
-        if (isInvincible) return;
+        if (isInvincible || isDead) return;
+
         currentHealth = Mathf.Max(0, currentHealth - dmg);
-        Debug.Log($"[Player] Current Health: {currentHealth}");
+        Debug.Log($"[Player] {dmg} 피해 입음. 남은 체력: {currentHealth}");
 
         if (currentHealth <= 0)
         {
@@ -438,7 +413,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            StartCoroutine(InvincibleRoutine());
+            StartCoroutine(InvincibleRoutine()); // 무적 처리[cite: 2]
         }
     }
     private void Die()

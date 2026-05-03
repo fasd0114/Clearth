@@ -236,6 +236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8866919341765514882}
   - component: {fileID: 5955126936381519842}
+  - component: {fileID: 4390393570691284209}
   m_Layer: 7
   m_Name: MonsterAttack
   m_TagString: Untagged
@@ -303,3 +304,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.35}
   m_EdgeRadius: 0
+--- !u!114 &4390393570691284209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4306272950801509898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0740f2c250ac00348bbcd748e0279137, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
