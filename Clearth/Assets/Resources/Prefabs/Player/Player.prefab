@@ -66,7 +66,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.27, y: 0.4}
+  m_Size: {x: 1.89, y: 2.8}
   m_Direction: 0
 --- !u!114 &3185173722271086449
 MonoBehaviour:
@@ -105,7 +105,7 @@ Transform:
   m_GameObject: {fileID: 2955754659491108789}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.034, y: 0.15, z: 0}
+  m_LocalPosition: {x: 0.238, y: 1.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -127,7 +127,10 @@ GameObject:
   - component: {fileID: 550670151351737297}
   - component: {fileID: 6532671308276487884}
   - component: {fileID: 5057709590462144922}
-  - component: {fileID: 5471866377020336467}
+  - component: {fileID: 6700844230547624731}
+  - component: {fileID: 5477091114644076657}
+  - component: {fileID: 4591922806000654049}
+  - component: {fileID: 6315674157345427903}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -143,9 +146,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3495814788333699459}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.52, y: -8.56, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6461461813643154950}
@@ -273,7 +276,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.27, y: 0.4}
+  m_Size: {x: 1.89, y: 2.8}
   m_Direction: 0
 --- !u!50 &550670151351737297
 Rigidbody2D:
@@ -314,31 +317,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e0ee807d3ac07468677d733bd9e91a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
   moveSpeed: 9
-  dashDistance: 15
+  dashDistance: 7
   dashCooldown: 1
   jumpForce: 13
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  groundCheck: {fileID: 6282588846747612491}
-  groundCheckRadius: 0.2
-  invincibleDuration: 3
-  flashInterval: 0.1
   deathYThreshold: -100
-  edgeCheck: {fileID: 7943296015301498054}
-  edgeCheckRadius: 0.1
-  wallCheck: {fileID: 8920093268590095864}
-  wallCheckRadius: 0.1
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 8
   wallSlideSpeed: 1
   wallJumpForce: 15
   wallJumpDirection: {x: 1, y: 8}
+  edgeCheckRadius: 0.1
+  attackHitbox: {fileID: 5750861191636567441}
+  isAttacking: 0
+  isJumpAttacking: 0
+  fadeLock: 1
   isPostVineLocked: 0
   isHangingFromVine: 0
-  fadeLock: 1
 --- !u!114 &5057709590462144922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,7 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fcd008fb6cee914e8761bdc9a2463fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5471866377020336467
+--- !u!114 &6700844230547624731
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -360,9 +354,61 @@ MonoBehaviour:
   m_GameObject: {fileID: 3495814788333699459}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef7a95fe5b2f1444f88e07e5c445b5a1, type: 3}
+  m_Script: {fileID: 11500000, guid: c00294f9ffa6b1346b21fd000db06c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 20
+  invincibleDuration: 3
+  flashInterval: 0.1
+--- !u!114 &5477091114644076657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3495814788333699459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a468a5836bd3cc42a335ba88e5f1c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundCheck: {fileID: 6282588846747612491}
+  groundCheckRadius: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  wallCheck: {fileID: 8920093268590095864}
+  wallCheckRadius: 0.1
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!114 &4591922806000654049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3495814788333699459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1dc3ca5290c694b8f221fe426c0683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6315674157345427903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3495814788333699459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c00294f9ffa6b1346b21fd000db06c77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
+  invincibleDuration: 3
+  flashInterval: 0.1
 --- !u!1 &6206835061285433377
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,7 +434,7 @@ Transform:
   m_GameObject: {fileID: 6206835061285433377}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.13399832, y: 0.137, z: 0}
+  m_LocalPosition: {x: 0.9379881, y: 0.959, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -419,7 +465,7 @@ Transform:
   m_GameObject: {fileID: 6361499128009454106}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.2394212, z: 0.033020318}
+  m_LocalPosition: {x: 0, y: -1.4273, z: 0.23114224}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -452,7 +498,7 @@ Transform:
   m_GameObject: {fileID: 6469832257198857043}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.274, y: 0.00057879835, z: 0.033020318}
+  m_LocalPosition: {x: 1.918, y: 0.004051589, z: 0.23114224}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -501,7 +547,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.5}
+  m_Size: {x: 2.1, y: 3.5}
   m_EdgeRadius: 0
 --- !u!114 &5750861191636567441
 MonoBehaviour:
