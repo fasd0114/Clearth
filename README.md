@@ -10,7 +10,7 @@ Navigation
 | **Player 시스템** | [/Scripts/Player](https://github.com/fasd0114/Clearth/tree/main/Clearth/Assets/Scripts/Player) | 상태 제어 및 물리 연산 로직 관리 |
 | **BOSS AI** | [/Scripts/Boss](https://github.com/fasd0114/Clearth/tree/main/Clearth/Assets/Scripts/Boss) | FSM 기반의 모듈형 페이즈/패턴 관리 |
 | **수학적 로직 기믹** | [/Scripts/Object/Vine](https://github.com/fasd0114/Clearth/tree/main/Clearth/Assets/Scripts/Object/Vine) | 포물선 운동 공식을 활용한 정밀한 도약 구현 |
-| **튜토리얼 시스템** | [/Scripts/Object/Tutorial](https://github.com/fasd0114/Clearth/tree/main/Clearth/Assets/Scripts/Object/Tutorial) | **RenderTexture 기반 해상도 대응 트러블 슈팅** |
+| **튜토리얼 시스템** | [/Scripts/Object/Tutorial](https://github.com/fasd0114/Clearth/tree/main/Clearth/Assets/Scripts/Object/Tutorial) | RenderTexture 기반 애니메이션 튜토리얼 시스템 |
 
 ---
 *본 프로젝트는 유니티(Unity) 환경에서 C#을 사용하여 개발되었습니다.*
