@@ -13,4 +13,4 @@
 | **튜토리얼 시스템** | [/Scripts/Object/Tutorial](https://github.com/fasd0114/Clearth/tree/main/Clearth/Assets/Scripts/Object/Tutorial) | RenderTexture 기반 애니메이션 튜토리얼 시스템 |
 
 <br>
-> 본 프로젝트는 Unity 2022.3.61f1 환경에서 C#을 사용하여 개발되었습니다.*
+>본 프로젝트는 Unity 2022.3.61f1 환경에서 C#을 사용하여 개발되었습니다.*
