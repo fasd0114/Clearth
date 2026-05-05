@@ -19,30 +19,33 @@ public class VineHangHandler : MonoBehaviour
         anim = GetComponent<Animator>(); // Animator 연결
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (isHanging && currentVine != null)
         {
             // 회전 각도 반영 위치 계산
             Vector3 rotatedOffset = currentVine.transform.rotation * hangOffset;
-            transform.position = currentVine.transform.position + rotatedOffset;
+            Vector2 targetPosition = currentVine.transform.position + rotatedOffset;
+            rb.MovePosition(targetPosition);
 
             // 각도 동기화
             transform.rotation = currentVine.transform.rotation;
-
-            if (Input.GetButtonDown("Jump"))
-            {
-                DetachFromVine();
-            }
         }
     }
-
+    void Update()
+    {
+        if (isHanging && Input.GetButtonDown("Jump"))
+        {
+            DetachFromVine();
+        }
+    }
     public void AttachToVine(VineController vine)
     {
         if (isHanging) return;
         currentVine = vine;
         isHanging = true;
         playerController.isHangingFromVine = true;
+        playerController.ResetMovementForVine();
 
         rb.velocity = Vector2.zero;
         rb.gravityScale = 0f;

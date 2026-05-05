@@ -7,24 +7,23 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public enum PlayerState { Idle, Move, Jump, Attack, Dash, WallSlide, WallJump, EdgeGrab, Dead }
-    [Header("Current State")]
+    [Header("현재 상태")]
     public PlayerState currentState = PlayerState.Idle;
 
-    [Header("Movement")]
+    [Header("이동 속도")]
     public float moveSpeed = 1.5f;
 
-    [Header("Dash")]
+    [Header("대쉬 설정")]
     public float dashDistance = 5f;
     public float dashCooldown = 1f;
-    bool isDashing;
     float dashCooldownEnd;
 
-    [Header("Jump")]
+    [Header("점프력")]
     public float jumpForce = 2.3f;
 
-    [Header("Death & Health")]
+    [Header("사망 Y좌표")]
     public float deathYThreshold = -100f;
-    // 체력 값들은 PlayerHealth 컴포넌트에서 관리하지만, 외부 참조를 위해 유지합니다.
+    // 체력 값들은 PlayerHealth 컴포넌트에서 관리하지만 외부 참조를 위해 유지
     public int CurrentHealth => health != null ? health.CurrentHealth : 0;
     public int MaxHealth => health != null ? health.MaxHealth : 0;
 
@@ -36,16 +35,19 @@ public class PlayerController : MonoBehaviour
     public Vector2 wallJumpDirection = new Vector2(1f, 1.5f);
     public float edgeCheckRadius = 0.1f;
     private bool isWallJumping = false;
-    private bool isClimbingEdge = false;
     private Transform currentEdgePoint;
 
-    [Header("Combat & Hitbox")]
+    [Header("전투 관련")]
     public AttackHitbox attackHitbox;
     private int attackIndex = 0;
     private bool comboPossible = false;
     private bool comboQueued = false;
     private float comboTimer = 0f;
     private float comboWindow = 0.8f;
+
+    private float horizontalInput;
+    private bool jumpRequested;
+    private bool wallJumpRequested;
 
     // References
     Rigidbody2D rb;
@@ -54,9 +56,7 @@ public class PlayerController : MonoBehaviour
     PlayerHealth health;
     EnvironmentChecker env;
 
-    // Flags (기존 변수 모두 유지)
-    public bool isAttacking;
-    public bool isJumpAttacking;
+    // Flags
     public bool fadeLock = true;
     [HideInInspector] public bool isPostVineLocked = false;
     [HideInInspector] public bool isHangingFromVine = false;
@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if (!fadeLock || (health != null && health.CurrentHealth <= 0)) return;
-        if (isClimbingEdge || isHangingFromVine) return;
+        if (currentState == PlayerState.EdgeGrab || isHangingFromVine) return;
 
         // 사망 경계 체크
         if (transform.position.y <= deathYThreshold) Die();
@@ -96,113 +96,264 @@ public class PlayerController : MonoBehaviour
         }
 
         HandleInput();
-        UpdateState();
+        if (CanAutoUpdateState())
+        {
+            UpdateAutoState();
+        }
         UpdateAnimParams();
     }
+    void FixedUpdate()
+    {
+        if (currentState == PlayerState.Dash || currentState == PlayerState.EdgeGrab || isHangingFromVine) return;
 
-    void LateUpdate() { ResetAttackFlags(); }
+        if (isPostVineLocked)
+        {
+            if (!env.IsGrounded) return;
+            isPostVineLocked = false;
+            anim.Play("Idle");
+        }
 
+        HandleStatePhysics();
+
+        if (jumpRequested)
+        {
+            ExecuteJump();
+            jumpRequested = false;
+        }
+
+        if (wallJumpRequested)
+        {
+            ExecuteWallJump();
+            wallJumpRequested = false;
+        }
+    }
+    bool CanAutoUpdateState()
+    {
+        // 강제 상태일 때는 자동 전환을 막아 기존 동작이 끊기지 않게 함
+        return currentState != PlayerState.Dash &&
+               currentState != PlayerState.Attack &&
+               currentState != PlayerState.WallJump &&
+               currentState != PlayerState.EdgeGrab &&
+               currentState != PlayerState.Dead;
+    }
+    void UpdateAutoState()
+    {
+        if (env.IsTouchingWall && !env.IsGrounded && rb.velocity.y <= 0.1f)
+        {
+            SetState(PlayerState.WallSlide);
+        }
+        else if (!env.IsGrounded)
+        {
+            SetState(PlayerState.Jump);
+        }
+        else if (Mathf.Abs(horizontalInput) > 0.1f)
+        {
+            SetState(PlayerState.Move);
+        }
+        else
+        {
+            SetState(PlayerState.Idle);
+        }
+    }
+    void SetState(PlayerState newState)
+    {
+        if (currentState == newState) return;
+
+        // 이전 상태 탈출 시 처리
+        switch (currentState)
+        {
+            case PlayerState.Dash:
+                rb.gravityScale = 2.5f;
+                anim.SetBool("isDashing", false);
+                break;
+            case PlayerState.WallSlide:
+                anim.SetBool("isWallSliding", false);
+                break;
+            case PlayerState.EdgeGrab:
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                rb.gravityScale = 2.5f;
+                break;
+        }
+        currentState = newState;
+
+        // 새로운 상태 진입 시 처리
+        switch (currentState)
+        {
+            case PlayerState.Idle:
+                rb.velocity = new Vector2(0, rb.velocity.y);
+                break;
+            case PlayerState.Dash:
+                anim.SetBool("isDashing", true);
+                rb.gravityScale = 0f;
+                break;
+            case PlayerState.Jump:
+                rb.gravityScale = 2.5f;
+                break;
+            case PlayerState.WallSlide:
+                anim.SetBool("isWallSliding", true);
+                break;
+            case PlayerState.EdgeGrab:
+                rb.velocity = Vector2.zero;
+                rb.gravityScale = 0f;
+                rb.constraints = RigidbodyConstraints2D.FreezeAll;
+                break;
+            case PlayerState.Attack:
+                if (env.IsGrounded) rb.velocity = new Vector2(0, rb.velocity.y);
+                break;
+        }
+    }
+    void HandleStatePhysics()
+    {
+        switch (currentState)
+        {
+            case PlayerState.Idle:
+            case PlayerState.Move:
+            case PlayerState.Jump:
+            case PlayerState.Attack:
+                ApplyMovement();
+                break;
+            case PlayerState.WallSlide:
+                if (rb.velocity.y < -wallSlideSpeed) rb.velocity = new Vector2(rb.velocity.x, -wallSlideSpeed);
+                ApplyMovement();
+                break;
+            case PlayerState.WallJump:
+                if (Mathf.Abs(horizontalInput) >= 0.1f) SetState(PlayerState.Jump);
+                ApplyMovement();
+                break;
+        }
+    }
     private void HandleInput()
     {
-        // 1. Dash Input
-        if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time >= dashCooldownEnd && !isDashing)
+        if (currentState == PlayerState.Dead || currentState == PlayerState.EdgeGrab) return;
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time >= dashCooldownEnd && currentState != PlayerState.Dash)
         {
-            if (isAttacking || isJumpAttacking) CancelAttack();
+            if (currentState == PlayerState.Attack) CancelAttack();
             Dash();
             return;
         }
 
-        // 2. Attack Input
-        if (Input.GetMouseButtonDown(0)) HandleAttack();
-
-        // 3. Move & Jump (공격 중이 아닐 때만)
-        if (!isDashing && !isAttacking)
+        if (Input.GetMouseButtonDown(0))
         {
-            HandleMovement();
+            HandleAttack();
+        }
+
+        if (currentState != PlayerState.Dash && currentState != PlayerState.Attack)
+        {
+            horizontalInput = Input.GetAxisRaw("Horizontal");
+
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                if (env.IsGrounded) HandleJump();
-                else if (env.IsTouchingWall) HandleWallJump();
+                if (env.IsGrounded) jumpRequested = true;
+                else if (env.IsTouchingWall) wallJumpRequested = true;
             }
         }
+        else
+        {
+            horizontalInput = 0;
+        }
     }
-
-    // --- 기존 public 메서드 완벽 복구 ---[cite: 2]
-
-    public void TakeDamage(int dmg) => health?.TakeDamage(dmg);
-    public void Heal(int amount) => health?.Heal(amount);
-    public void LockMovement() => isPostVineLocked = true;
-    public void EndAttack() => isAttacking = false;
-    public void EndJumpAttack() => isJumpAttacking = false;
-    public void PlayAttackSound() => Managers.Sound.Play("Attack", 0.5f);
-
-    private void Die()
+    void ApplyMovement()
     {
-        // PlayerHealth의 Die는 팝업을 띄우고, Controller는 로직을 정지합니다.
-        health?.TakeDamage(9999);
+        if (isWallJumping && Mathf.Abs(horizontalInput) < 0.1f) return;
+        if (isWallJumping && Mathf.Abs(horizontalInput) >= 0.1f) isWallJumping = false;
+
+        rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
+        if (horizontalInput != 0f) transform.localScale = new Vector3(Mathf.Sign(horizontalInput) * baseScale, baseScale, 1f);
     }
-
-    // --- 내부 로직 ---
-
-    void HandleMovement()
+    public void ResetMovementForVine()
     {
-        float h = Input.GetAxisRaw("Horizontal");
-        if (isWallJumping && Mathf.Abs(h) < 0.1f) return;
-        if (isWallJumping && Mathf.Abs(h) >= 0.1f) isWallJumping = false;
+        horizontalInput = 0f;
+        jumpRequested = false;
+        wallJumpRequested = false;
+        rb.velocity = Vector2.zero;
 
-        rb.velocity = new Vector2(h * moveSpeed, rb.velocity.y);
-        if (h != 0f) transform.localScale = new Vector3(Mathf.Sign(h) * baseScale, baseScale, 1f);
+        // 애니메이션 파라미터 초기화 (추락 애니메이션 방지)
+        anim.SetFloat("yVelocity", 0f);
+        anim.SetBool("isRunning", false);
     }
-
-    void HandleJump()
+    void ExecuteJump()
     {
         Managers.Sound.Play("Jump");
-        anim.ResetTrigger("attack1");
-        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-    }
+    anim.ResetTrigger("attack1"); 
+    rb.velocity = new Vector2(rb.velocity.x, jumpForce); 
+}
 
-    void HandleWallJump()
+    void ExecuteWallJump()
     {
         isWallJumping = true;
+        SetState(PlayerState.WallJump); // 즉시 상태 변경을 호출하여 Slide 애니메이션 해제[cite: 1]
+
         anim.SetTrigger("wallJump");
 
         int jumpDir = -Mathf.RoundToInt(transform.localScale.x / baseScale);
-
-        // 다시 baseScaleX를 곱해 크기를 유지하며 방향만 반전시킵니다.[cite: 2]
         transform.localScale = new Vector3(jumpDir * baseScale, baseScale, 1f);
 
         rb.velocity = Vector2.zero;
         Vector2 force = new Vector2(wallJumpDirection.x * jumpDir, wallJumpDirection.y).normalized * wallJumpForce;
         rb.AddForce(force, ForceMode2D.Impulse);
     }
+    public void TakeDamage(int dmg) => health?.TakeDamage(dmg);
+    public void Heal(int amount) => health?.Heal(amount);
+    public void LockMovement() => isPostVineLocked = true;
+    public void EndAttack()
+    {
+        if (currentState == PlayerState.Attack)
+        {
+            SetState(PlayerState.Idle);
+    }
+    }
+    public void EndJumpAttack()
+    {
+        if (currentState == PlayerState.Attack)
+        {
+            SetState(PlayerState.Idle);
+    }
+    }
+    public void PlayAttackSound() => Managers.Sound.Play("Attack", 0.5f);
+
+    private void Die()
+    {
+        health?.TakeDamage(9999);
+    }
+
     void HandleAttack()
     {
-        if (!env.IsGrounded)
+        // 이미 공격 중이라면 콤보 입력만 체크하고 리턴
+        if (currentState == PlayerState.Attack)
         {
-            if (isJumpAttacking) return;
-            anim.SetTrigger("jumpattack");
-            isJumpAttacking = true;
+            if (comboPossible) comboQueued = true;
             return;
         }
 
-        if (!isAttacking)
+        // 공중 공격 처리
+        if (!env.IsGrounded)
         {
-            isAttacking = true;
-            StartCoroutine(AttackRoutine());
+            SetState(PlayerState.Attack);
+            anim.SetTrigger("jumpattack");
+            return;
         }
-        else if (comboPossible) comboQueued = true;
+
+        // 지상 공격 시작
+        StartCoroutine(AttackRoutine());
     }
 
     IEnumerator AttackRoutine()
     {
+        // 시작 시 상태 변경
+        SetState(PlayerState.Attack);
+
         attackIndex = 1;
         anim.SetTrigger("attack1");
-        rb.velocity = new Vector2(0, rb.velocity.y);
-        comboPossible = true; comboQueued = false; comboTimer = 0f;
+
+        comboPossible = true; // 입력 허용
+        comboQueued = false;
+        comboTimer = 0f;
+
         while (comboTimer < comboWindow)
         {
             comboTimer += Time.deltaTime;
-            if (comboQueued)
+            if (comboQueued) // 재입력 시 2타 전이
             {
                 attackIndex = 2;
                 anim.SetTrigger("attack2");
@@ -211,51 +362,58 @@ public class PlayerController : MonoBehaviour
             }
             yield return null;
         }
-        yield return new WaitUntil(() => !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack1") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack2"));
-        isAttacking = false; comboPossible = false; comboQueued = false; attackIndex = 0;
+
+        // 애니메이션이 완전히 끝날 때까지 대기
+        yield return new WaitUntil(() =>
+            !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack1") &&
+            !anim.GetCurrentAnimatorStateInfo(0).IsName("Attack2") &&
+            !anim.GetCurrentAnimatorStateInfo(0).IsName("JumpAtk"));
+
+        comboPossible = false;
+        comboQueued = false;
+        attackIndex = 0;
+
+        SetState(PlayerState.Idle);
     }
 
     public void Dash()
     {
-        if (isDashing) return;
+        if (currentState == PlayerState.Dash) return;
         StartCoroutine(DashRoutine());
     }
 
     IEnumerator DashRoutine()
     {
-        isDashing = true;
+        SetState(PlayerState.Dash);
         Managers.Sound.Play("Dash");
         var dashClip = anim.runtimeAnimatorController.animationClips.First(clip => clip.name == "Dash");
         float dashAnimLength = dashClip.length / 2f;
         dashCooldownEnd = Time.time + dashCooldown;
-        anim.SetBool("isDashing", true);
 
-        float originalGravity = rb.gravityScale;
-        rb.gravityScale = 0f;
+        // 대시 중 높이 유지
         float direction = Mathf.Sign(transform.localScale.x);
         float dashVelocity = dashDistance / dashAnimLength;
-        float fixedY = transform.position.y;
 
         float timer = 0f;
         while (timer < dashAnimLength)
         {
             rb.velocity = new Vector2(direction * dashVelocity, 0f);
-            transform.position = new Vector3(transform.position.x, fixedY, transform.position.z);
             timer += Time.deltaTime;
             yield return null;
         }
 
-        isDashing = false;
-        anim.SetBool("isDashing", false);
+        SetState(PlayerState.Idle);
         rb.velocity = Vector2.zero;
-        rb.gravityScale = originalGravity;
     }
 
-    // EdgeGrab 감지[cite: 2]
+    // EdgeGrab 감지
     void OnTriggerStay2D(Collider2D other)
     {
+        if (currentState == PlayerState.EdgeGrab || currentState == PlayerState.Dead)
+            return;
+
         float facingDir = Mathf.Sign(transform.localScale.x);
-        if (other.CompareTag("EdgeGrabPoint") && !isClimbingEdge && env.IsFacingWall(facingDir))
+        if (other.CompareTag("EdgeGrabPoint") && env.IsFacingWall(facingDir))
         {
             StartCoroutine(EdgeGrabRoutine(other.transform));
         }
@@ -263,7 +421,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator EdgeGrabRoutine(Transform edgePoint)
     {
-        isClimbingEdge = true;
+        SetState(PlayerState.EdgeGrab);
         rb.velocity = Vector2.zero;
         rb.gravityScale = 0f;
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
@@ -274,7 +432,7 @@ public class PlayerController : MonoBehaviour
         transform.position = edgePoint.position;
         currentEdgePoint = edgePoint;
         anim.SetTrigger("edgeGrab");
-        yield return new WaitUntil(() => !isClimbingEdge);
+        yield return new WaitUntil(() => currentState != PlayerState.EdgeGrab);
     }
 
     public void OnEdgeGrabClimbEnd()
@@ -283,29 +441,8 @@ public class PlayerController : MonoBehaviour
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         transform.position = currentEdgePoint.position + new Vector3(direction * 0.4f, 2.05f, 0f);
         rb.gravityScale = 2.5f;
-        isClimbingEdge = false;
+        SetState(PlayerState.Idle);
         anim.Play("Idle");
-    }
-
-    void UpdateState()
-    {
-        if (isDashing) currentState = PlayerState.Dash;
-        else if (isClimbingEdge) currentState = PlayerState.EdgeGrab;
-        else if (isAttacking) currentState = PlayerState.Attack;
-        else if (isWallJumping) currentState = PlayerState.WallJump;
-        else if (env.IsTouchingWall && !env.IsGrounded && rb.velocity.y <= 0.1f)
-        {
-            currentState = PlayerState.WallSlide;
-            if (rb.velocity.y < -wallSlideSpeed) rb.velocity = new Vector2(rb.velocity.x, -wallSlideSpeed);
-            anim.SetBool("isWallSliding", true);
-        }
-        else
-        {
-            anim.SetBool("isWallSliding", false);
-            if (!env.IsGrounded) currentState = PlayerState.Jump;
-            else if (Mathf.Abs(rb.velocity.x) > 0.1f) currentState = PlayerState.Move;
-            else currentState = PlayerState.Idle;
-        }
     }
 
     void UpdateAnimParams()
@@ -315,25 +452,17 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("isRunning", Mathf.Abs(rb.velocity.x) > 0.1f);
     }
 
-    void ResetAttackFlags()
-    {
-        if (isJumpAttacking && !anim.GetCurrentAnimatorStateInfo(0).IsName("JumpAtk") && env.IsGrounded)
-        {
-            StartCoroutine(ResetJumpAttackAfterLanding());
-        }
-    }
-
-    IEnumerator ResetJumpAttackAfterLanding()
-    {
-        yield return new WaitForSeconds(0.03f);
-        isJumpAttacking = false;
-    }
 
     public void CancelAttack()
     {
         if (attackHitbox != null) attackHitbox.DisableHitbox();
-        isAttacking = isJumpAttacking = comboPossible = comboQueued = false;
+        comboPossible = comboQueued = false;
         attackIndex = 0;
-        anim.ResetTrigger("attack1"); anim.ResetTrigger("attack2"); anim.ResetTrigger("jumpattack");
+
+        anim.ResetTrigger("attack1"); 
+        anim.ResetTrigger("attack2"); 
+        anim.ResetTrigger("jumpattack");
+
+        SetState(PlayerState.Idle);
     }
 }
